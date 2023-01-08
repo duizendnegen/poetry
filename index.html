@@ -2,6 +2,10 @@
 layout: page
 ---
 
-<section class="homepage">
-  <p>Book, a Jekyll theme.</p>
-</section>
+<div class="posts">
+  <ul>
+    {% for post in site.posts %}
+    <li>{% include card.html post = post %}</li>
+    {% endfor %}
+  </ul>
+</div>

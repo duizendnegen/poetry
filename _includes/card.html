@@ -8,11 +8,7 @@
 
     <div class="card__date">{{ post.date | date: "%Y / %m / %d"}}</div>
 
-    {% assign excerpt = post.excerpt | strip_html %}
-    {% if volume == 'less' %}
-    {% assign excerpt = excerpt | truncatewords: 10 %}
-    {% endif %}
-    <div class="card__excerpt">{{ excerpt }}</div>
+    <div class="card__excerpt">{{ post.content }}</div>
 
   </div>
 </a>

@@ -2,18 +2,18 @@
 # ============================================================================
 # if your site is serving on https://xxx.github.io, set `baseurl: /`
 # if your site is serving on https://xxx.github.io/path, set `baseurl: /path`
-baseurl: /book
+baseurl: /
 
 # site title
-title: Book
+title: duizendnegen - touwtrekken en aanduwen
 
 # site favicon, absolute path required
 favicon: /assets/img/favicon.ico
 
 # home button image, absolute path requried
-avatar: /assets/img/avatar.jpg
+avatar: /assets/img/logo.png
 # specify meaningful description for your avatar
-avatarInfo: "Tokyo tower"
+avatarInfo: "1009"
 
 # default variables for post-type page
 defaults:
@@ -23,7 +23,7 @@ defaults:
       type: posts
     values:
       layout: post
-      comment: true
+      comment: false
 
 
 # sass
@@ -43,15 +43,18 @@ exclude:
   - package-lock.json
   - node_modules
 
+# nav 
+# ============================================================================
+# turn it off -> navbar: false
+navbar: false
 
 # google analytics
 # ============================================================================
 # turn it off -> ga: false
-ga: UA-69579248-1
-
+ga: false
 
 # disqus
 # ============================================================================
 # turn it off for all posts -> disqus: false
 # turn it off for a particular post -> add `comment: false` to post front matter
-disqus: kkninjae
+disqus: false
